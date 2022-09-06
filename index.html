@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script nomodule src="js/countUp.umd.js"></script>
+    <script nomodule src="js/main-for-legacy.js"></script> -->
+    <script defer type="module" src="./countUp.min.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .courses-counter {
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto;
+        list-style: none;
+        display: flex;
+      }
+
+      .courses-counter__item {
+        font-weight: bold;
+        font-style: normal;
+        font-size: 32px;
+        text-transform: uppercase;
+        color: rgb(6, 117, 246);
+        margin-top: 4px;
+        text-align: center;
+        width: calc(25% - 30px);
+        margin: 15px;
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 8px;
+        display: flex;
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+        flex-direction: column;
+        z-index: 1;
+      }
+
+      .courses-counter__num {
+        display: block;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 48px;
+        color: rgb(6, 117, 246);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: pre;
+        line-height: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <p style="min-height: 2500px">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem vel
+      libero doloremque placeat pariatur. Qui sunt quod dolor reiciendis magni,
+      sed explicabo! Iusto optio iste rerum reiciendis, tenetur tempore repellat
+      ex expedita perferendis! Minus quibusdam, architecto reiciendis non earum
+      quidem delectus maxime quasi consequatur fugit laudantium sapiente itaque
+      necessitatibus ipsum ut similique! Saepe exercitationem rem, nulla dolores
+      culpa corrupti autem iste possimus commodi, ipsum modi fugit explicabo eum
+      est cumque. Voluptas esse rem eius ea laudantium odit incidunt. Quisquam
+      exercitationem eveniet nisi officia repellendus incidunt, perferendis cum
+      distinctio, repellat corrupti ut a vero id laudantium quaerat nam, enim
+      rerum! Veniam vero qui, commodi labore molestias ut quidem incidunt libero
+      provident. Quod, aperiam commodi porro eligendi at accusantium totam fugit
+      quaerat ipsum saepe. Tempora quos ad sed adipisci accusamus assumenda,
+      libero blanditiis doloremque placeat consequatur, totam hic deleniti
+      aliquam recusandae neque odit optio id esse ipsum. Odit recusandae impedit
+      nisi cupiditate dolorum necessitatibus quibusdam, eius tempora.
+      Reprehenderit atque architecto voluptatibus nobis tempore, aspernatur
+      error esse consequuntur nisi voluptates odit blanditiis iste, recusandae
+      repellat ipsum culpa quasi iure? Dolores possimus tempore sequi deleniti
+      expedita dignissimos? Quod totam unde laudantium dolorem sint! Id iusto
+      mollitia eaque voluptatum doloribus blanditiis, temporibus sit harum
+      incidunt molestiae magnam ea aut, quidem, nisi excepturi! Aperiam ex totam
+      error cum quam voluptatum quibusdam, labore necessitatibus doloremque
+      doloribus pariatur sapiente, reiciendis accusantium ipsa, dicta odit
+      aliquam quaerat temporibus molestiae sit fugiat at asperiores! Odio
+      facilis, numquam consequatur impedit officia eveniet magnam eius dolore
+      rem natus voluptas dignissimos officiis pariatur?
+    </p>
+    <section>
+      <div class="container">
+        <ul class="courses-counter">
+          <li class="courses-counter__item">
+            <span
+              class="courses-counter__num test"
+              id="courses"
+              data-target="25"
+            ></span>
+            COURSES
+          </li>
+          <li class="courses-counter__item">
+            <span
+              class="courses-counter__num"
+              id="students"
+              data-target="4157"
+            ></span>
+            STUDENTS
+          </li>
+          <li class="courses-counter__item">
+            <span
+              class="courses-counter__num"
+              id="webinars"
+              data-target="29"
+            ></span>
+            WEBINARS
+          </li>
+          <li class="courses-counter__item">
+            <span
+              class="courses-counter__num"
+              id="insiders"
+              data-target="255"
+            ></span>
+            INSIDERS
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
