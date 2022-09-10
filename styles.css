@@ -57,3 +57,47 @@ img {
   margin: 0 auto;
   width: 100%;
 }
+.box {
+  max-width: 220px;
+  height: auto;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box::before {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.box:nth-child(1) {
+    transform: skewX(-30deg);
+
+  /* animation: animateX30 3000ms infinite 1000ms; */
+  background-color: orange;
+}
+
+/* .box:nth-child(1)::before {
+  content: "skewX(30deg)";
+} */
+
+
+@keyframes animateX30 {
+  0% {
+    transform: skewX(0deg);
+  }
+
+  50% {
+    transform: skewX(30deg);
+  }
+
+  100% {
+    transform: skewX(0deg);
+  }
+}
